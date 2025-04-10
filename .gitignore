@@ -13,6 +13,7 @@ node_modules
 output-file.txt
 a-different-file.txt
 dist
+artifacts
 
 # Debug
 npm-debug.log*
