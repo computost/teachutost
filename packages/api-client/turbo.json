@@ -1,0 +1,11 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["api#build", "scripts#dotnet-tool-restore"],
+      "inputs": ["../../apps/api/bin/Debug/net8.0/Api.dll"],
+      "outputs": ["./bin/swagger.json", "./Api.ts"]
+    }
+  }
+}

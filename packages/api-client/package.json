@@ -1,0 +1,11 @@
+{
+  "name": "api-client",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "dotnet swagger tofile --output ./bin/swagger.json ../../apps/api/bin/Debug/net8.0/Api.dll v1 && swagger-typescript-api generate --path ./bin/swagger.json"
+  },
+  "devDependencies": {
+    "swagger-typescript-api": "^13.0.28"
+  }
+}
