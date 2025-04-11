@@ -3,11 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "outputs": ["bin", "obj"],
-      "passThroughEnv": ["PROGRAMFILES", "PROGRAMFILES(X86)", "USERPROFILE"]
-    },
-    "dev": {
-      "passThroughEnv": ["PROGRAMFILES", "PROGRAMFILES(X86)", "USERPROFILE"]
+      "outputs": ["bin", "obj"]
     }
   }
 }
