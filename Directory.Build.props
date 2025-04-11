@@ -12,7 +12,7 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild> <!-- Enable linter -->
-        <UseArtifactsOutput>true</UseArtifactsOutput>
+        <UseArtifactsOutput>false</UseArtifactsOutput>
         <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     </PropertyGroup>
     

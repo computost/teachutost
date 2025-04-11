@@ -1,0 +1,11 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "swagger": {
+      "dependsOn": ["api#build"],
+      "inputs": ["../../apps/api/bin/Debug/net8.0/Api.dll"],
+      "outputs": ["./bin/swagger.json"]
+    }
+  }
+}
