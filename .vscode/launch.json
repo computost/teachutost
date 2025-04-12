@@ -5,6 +5,14 @@
       "name": ".NET Core Attach (search for Api)",
       "type": "coreclr",
       "request": "attach"
+    },
+    {
+      "type": "expo",
+      "request": "attach",
+      "name": "Debug Expo app",
+      "projectRoot": "${workspaceFolder}/apps/native",
+      "bundlerPort": "8081",
+      "bundlerHost": "127.0.0.1"
     }
   ]
 }
