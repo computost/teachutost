@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using Tapper;
 
 namespace MyTurborepo.Apps.Api;
 
+[PublicAPI]
 [TranspilationSource]
 public record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
 {

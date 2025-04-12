@@ -8,7 +8,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "scripts#create-sln": "turbo scripts#create-sln",
-    "scripts#swagger": "turbo scripts#swagger"
+    "scripts#swagger": "turbo scripts#swagger",
+    "scripts#resharper": "turbo scripts#resharper"
   },
   "devDependencies": {
     "turbo": "^2.5.0"

@@ -6,7 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RootNamespace>MyTurborepo.Apps.Api</RootNamespace>
+  </PropertyGroup>
+
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" />
     <PackageReference Include="Swashbuckle.AspNetCore" />

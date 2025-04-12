@@ -3,13 +3,10 @@ using TypedSignalR.Client;
 
 namespace MyTurborepo.Apps.Api;
 
-public class WeatherForecastHub : Hub<IWeatherForecastClient>, IWeatherForecastHub { }
+public class WeatherForecastHub : Hub<IWeatherForecastClient>, IWeatherForecastHub;
 
 [Hub]
-public interface IWeatherForecastHub
-{
-
-}
+public interface IWeatherForecastHub;
 
 [Receiver]
 public interface IWeatherForecastClient

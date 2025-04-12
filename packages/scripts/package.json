@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "create-sln": "tsx ./src/create-sln.ts",
-    "dotnet-tool-restore": "dotnet tool restore"
+    "dotnet-tool-restore": "dotnet tool restore",
+    "resharper": "tsx ./src/resharper.ts"
   },
   "dependencies": {
     "execa": "^9.5.2",
@@ -12,6 +13,7 @@
     "tsx": "^4.19.3"
   },
   "devDependencies": {
+    "@types/sarif": "^2.1.7",
     "typescript": "^5.3.3"
   }
 }

@@ -1,15 +1,8 @@
-import { execa } from "execa";
 import { glob } from "glob";
 import { exit } from "process";
 
 import { rootFolderPath } from "./root-folder-path.js";
-
-const run = execa({
-  cwd: rootFolderPath,
-  reject: false,
-  stderr: "inherit",
-  stdout: "inherit",
-});
+import { run } from "./run.js";
 
 await createSlnFile();
 await addProjFiles();

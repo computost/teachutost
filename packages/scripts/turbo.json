@@ -6,6 +6,11 @@
       "inputs": ["../../{apps,packages}/**/*.*proj"],
       "outputs": ["../../Teachutost.sln"]
     },
-    "dotnet-tool-restore": {}
+    "dotnet-tool-restore": {},
+    "resharper": {
+      "dependsOn": ["create-sln"],
+      "inputs": ["../../**/*.cs"],
+      "outputs": ["./bin/inspectcode.sarif"]
+    }
   }
 }
