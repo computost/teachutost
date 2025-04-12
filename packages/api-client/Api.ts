@@ -11,7 +11,7 @@
  */
 
 export interface WeatherForecast {
-  /** @format date */
+  /** @format date-time */
   date?: string;
   /** @format int32 */
   temperatureC?: number;

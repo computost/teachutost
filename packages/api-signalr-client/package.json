@@ -1,0 +1,9 @@
+{
+  "name": "api-signalr-client",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "generated/TypedSignalR.Client/index.ts",
+  "scripts": {
+    "build": "dotnet tsrts --project ../../apps/api/Api.csproj --output generated"
+  }
+}
