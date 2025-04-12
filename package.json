@@ -7,6 +7,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "scripts#create-sln": "turbo scripts#create-sln",
     "scripts#swagger": "turbo scripts#swagger"
   },
   "devDependencies": {
