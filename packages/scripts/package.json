@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "create-sln": "tsx ./create-sln.ts",
     "dotnet-tool-restore": "dotnet tool restore"
+  },
+  "dependencies": {
+    "execa": "^9.5.2",
+    "glob": "^11.0.1",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
