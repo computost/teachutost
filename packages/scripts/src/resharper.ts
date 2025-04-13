@@ -7,13 +7,9 @@ import { run } from "./run.js";
 
 const sarifFilePath = join(import.meta.dirname, "../bin/inspectcode.sarif");
 
-const { exitCode } =
-  await run`dotnet jb inspectcode Teachutost.sln --output=${sarifFilePath} --format=sarif`;
-
-if (exitCode !== 0) {
-  console.error("That was an error running the ReSharper command-line tool.");
-  exit(exitCode);
-}
+await run(
+  "running the ReSharper command-line tool"
+)`dotnet jb inspectcode Teachutost.sln --output=${sarifFilePath} --format=sarif`;
 
 const results = JSON.parse((await readFile(sarifFilePath)).toString()) as Log;
 const issues = new Set<string>();
