@@ -10,11 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: ./.github/actions/install-pnpm
-
       - name: Install .NET
         uses: ./.github/actions/install-dotnet
+
+      - name: Install pnpm
+        uses: ./.github/actions/install-pnpm
 
       - run: pnpm build
 
@@ -28,3 +28,17 @@ jobs:
         uses: ./.github/actions/install-pnpm
 
       - run: pnpm lint
+
+  resharper:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install .NET
+        uses: ./.github/actions/install-dotnet
+
+      - name: Install pnpm
+        uses: ./.github/actions/install-pnpm
+
+      - run: pnpm scripts#resharper
