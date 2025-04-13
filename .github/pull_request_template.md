@@ -60,3 +60,13 @@ https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/li
 
 Feel free to modify the keyword if another is more appropriate. For example: "Fixes."
 -->
+
+<!-- ## Wholesome Toll -->
+
+<!--
+Feel free to share anything here that makes you happy.
+
+It can be a poem, a hot take, a family photo, or whatever you like.
+
+Maybe you'll make a future reader's day just a little bit better.
+-->
