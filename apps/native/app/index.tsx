@@ -1,5 +1,6 @@
-import { Api, WeatherForecast } from "api-client";
+import { Api } from "api-client";
 import { getReceiverRegister } from "api-signalr-client";
+import Constants from "expo-constants";
 import { ReactNode, useEffect, useState } from "react";
 import { FlatList, Text, View } from "react-native";
 import { HttpTransportType, HubConnectionBuilder } from "@microsoft/signalr";
@@ -47,7 +48,7 @@ function useWeatherForecast(): Forecast[] | null {
   useEffect(() => {
     (async () => {
       const api = new Api({
-        baseUrl: "http://localhost:8080",
+        baseUrl: getApiHostname(),
       });
       const response = await api.weatherforecast.getWeatherForecast({
         mode: "cors",
@@ -66,7 +67,7 @@ function useWeatherForecast(): Forecast[] | null {
 
   useEffect(() => {
     const connection = new HubConnectionBuilder()
-      .withUrl("http://localhost:8080/weatherforecasthub", {
+      .withUrl(`${getApiHostname()}/weatherforecasthub`, {
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets,
       })
@@ -110,3 +111,18 @@ type Forecast = {
   summary?: string;
   temperature?: number;
 };
+
+function getApiHostname(): string {
+  // Typically exp://1.2.3.4:8081/
+  const { experienceUrl } = Constants;
+
+  const url = new URL(experienceUrl);
+  url.port = "8080";
+  const urlString = url.toString();
+
+  const urlWithHttp = urlString.replace(/^[^:]*/, "http");
+
+  const urlWithoutTrailingSlash = urlWithHttp.replace(/\/$/, "");
+
+  return urlWithoutTrailingSlash;
+}
