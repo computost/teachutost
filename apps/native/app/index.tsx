@@ -1,4 +1,4 @@
-import { Api, WeatherForecast } from "api-client";
+import { Api } from "api-client";
 import { getReceiverRegister } from "api-signalr-client";
 import { ReactNode, useEffect, useState } from "react";
 import { FlatList, Text, View } from "react-native";
