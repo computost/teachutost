@@ -41,9 +41,9 @@ Did you add unit tests? End-to-end tests?
 If necessary, paste screenshots or demo videos in this section.
 -->
 
-<!--
-## Notes
+<!-- ## Notes -->
 
+<!--
 If there are any details about this pull request that you do not feel fit into any other sections, add them here.
 -->
 
