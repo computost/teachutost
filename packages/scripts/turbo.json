@@ -8,7 +8,7 @@
     },
     "dotnet-tool-restore": {},
     "resharper": {
-      "dependsOn": ["create-sln"],
+      "dependsOn": ["create-sln", "dotnet-tool-restore"],
       "inputs": ["../../**/*.cs"],
       "outputs": ["./bin/inspectcode.sarif"]
     }
