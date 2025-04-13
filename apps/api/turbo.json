@@ -3,7 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "inputs": [".", "../../Directory.Build.props"],
+      "inputs": ["$TURBO_DEFAULT$", "../../Directory.Build.props"],
       "outputs": ["bin", "obj"]
     }
   }
