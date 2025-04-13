@@ -1,0 +1,13 @@
+name: Install .NET
+description: Installs .NET along with nuget dependencies. Cached.
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.x
+        cache: true
+        cache-dependency-path:
+          - ./apps/api/packages.lock.json

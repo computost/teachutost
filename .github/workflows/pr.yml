@@ -10,14 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: ./.github/actions/install-pnpm
+      - name: Install pnpm
+        uses: ./.github/actions/install-pnpm
 
       - name: Install .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.x
-          cache: true
-          cache-dependency-path: ./apps/api/packages.lock.json
+        uses: ./.github/actions/install-dotnet
 
       - run: pnpm build
 
@@ -27,6 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - uses: ./.github/actions/install-pnpm
+      - name: Install pnpm
+        uses: ./.github/actions/install-pnpm
 
       - run: pnpm lint
