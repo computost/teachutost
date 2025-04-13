@@ -5,11 +5,14 @@
   "scripts": {
     "create-sln": "tsx ./src/create-sln.ts",
     "dotnet-tool-restore": "dotnet tool restore",
+    "install-chromium": "tsx ./src/install-chromium.ts",
     "resharper": "tsx ./src/resharper.ts"
   },
   "dependencies": {
+    "@playwright/browser-chromium": "^1.51.1",
     "execa": "^9.5.2",
     "glob": "^11.0.1",
+    "playwright-core": "^1.51.1",
     "tsx": "^4.19.3"
   },
   "devDependencies": {
