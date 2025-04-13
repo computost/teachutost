@@ -1,3 +1,12 @@
+<!--
+> [!Tip]
+> This pull request is best reviewed commit-by-commit.
+-->
+
+<!--
+Uncomment the section above if you used granular commits to compose this change.
+-->
+
 ## Context
 
 <!--
