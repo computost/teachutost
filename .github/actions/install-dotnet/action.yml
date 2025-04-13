@@ -9,6 +9,6 @@ runs:
       with:
         dotnet-version: 8.x
         cache: true
-        cache-dependency-path:
+        cache-dependency-path: |
           ./apps/*/packages.lock.json
           ./packages/*/packages.lock.json
