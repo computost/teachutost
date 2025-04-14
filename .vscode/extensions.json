@@ -1,6 +1,8 @@
 {
-    "recommendations": [
-        "muhammad-sammy.csharp",
-        "dev-land.resharpervscode"
-    ]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "dev-land.resharpervscode",
+    "github.vscode-github-actions",
+    "muhammad-sammy.csharp"
+  ]
 }

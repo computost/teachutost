@@ -3,14 +3,12 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["prebuild", "^build"],
-      "outputs": ["output-file.txt", "dist/**"]
+      "dependsOn": ["^build"]
     },
     "dev": {
       "cache": false,
       "persistent": true
     },
-    "prebuild": {},
     "lint": {
       "dependsOn": ["^lint"]
     },

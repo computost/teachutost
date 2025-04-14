@@ -14,6 +14,7 @@
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild> <!-- Enable linter -->
         <UseArtifactsOutput>false</UseArtifactsOutput>
         <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     </PropertyGroup>
     
     <!-- Packaging -->
