@@ -3,7 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "dependsOn": ["scripts#dotnet-tool-restore"],
+      "dependsOn": ["scripts#dotnet-tool-restore", "api#restore"],
       "inputs": ["../../apps/api/**"],
       "outputs": ["./generated/**"]
     }
