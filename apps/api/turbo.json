@@ -3,8 +3,13 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "inputs": ["$TURBO_DEFAULT$", "../../Directory.Build.props"],
+      "dependsOn": ["restore"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/Directory.Build.props", "$TURBO_ROOT$/Directory.Packages.props"],
       "outputs": ["bin", "obj"]
+    },
+    "restore": {
+      "inputs": ["$TURBO_ROOT$/Directory.Build.props", "$TURBO_ROOT$/Directory.Packages.props", "Api.csproj"],
+      "outputs": ["obj"]
     }
   }
 }
