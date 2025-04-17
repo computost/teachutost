@@ -17,5 +17,7 @@
         "muhammad-sammy.csharp"
       ]
     }
-  }
+  },
+  "initializeCommand": "node .devcontainer/env.js",
+  "runArgs": ["--env-file", "${localWorkspaceFolder}/.devcontainer/.env"]
 }
