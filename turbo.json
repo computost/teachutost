@@ -13,6 +13,5 @@
       "dependsOn": ["^lint"]
     },
     "check-types": {}
-  },
-  "globalPassThroughEnv": ["PROGRAMFILES", "PROGRAMFILES(X86)", "USERPROFILE"]
+  }
 }

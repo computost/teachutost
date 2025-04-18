@@ -6,7 +6,9 @@
       "inputs": ["../../{apps,packages}/**/*.*proj"],
       "outputs": ["../../Teachutost.sln"]
     },
-    "dotnet-tool-restore": {},
+    "dotnet-tool-restore": {
+      "inputs": ["$TURBO_ROOT$/.config/dotnet-tools.json"]
+    },
     "resharper": {
       "dependsOn": ["create-sln", "dotnet-tool-restore"],
       "inputs": ["../../**/*.cs"],

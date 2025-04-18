@@ -1,0 +1,10 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "dev": {
+      "with": ["api#dev"],
+      "env": ["REACT_NATIVE_PACKAGER_HOSTNAME"]
+    }
+  }
+}
