@@ -1,0 +1,23 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/pnpm:2": {},
+    "ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {},
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "8.0"
+    },
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "dev-land.resharpervscode",
+        "github.vscode-github-actions",
+        "muhammad-sammy.csharp"
+      ]
+    }
+  },
+  "initializeCommand": "node .devcontainer/env.js",
+  "runArgs": ["--env-file", "${localWorkspaceFolder}/.devcontainer/.env"]
+}

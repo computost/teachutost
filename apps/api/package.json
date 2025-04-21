@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "dotnet watch",
-    "build": "dotnet build"
+    "build": "dotnet build --no-restore",
+    "restore": "dotnet restore"
   }
 }
