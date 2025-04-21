@@ -7,6 +7,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
     "scripts#create-sln": "turbo scripts#create-sln",
     "scripts#resharper": "turbo scripts#resharper"
   },
